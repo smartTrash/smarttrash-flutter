@@ -6,7 +6,7 @@ import 'home.dart';
 
 
 
-class LoginPage extends StatelessWidget {
+class LoginPage2 extends StatelessWidget {
   
   @override
   Widget build(BuildContext context) {
@@ -68,7 +68,7 @@ SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle.dark.copyWith(
                           builder: (context) => HomePage()
                         ));
                       },
-                                          child: new Container(
+                            child: new Container(
                             alignment: Alignment.center,
                             height: 60.0,
                             decoration: new BoxDecoration(

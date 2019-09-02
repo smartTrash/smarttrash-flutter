@@ -3,15 +3,16 @@ import 'package:flutter/services.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:smarttrash/style/theme.dart' as Theme;
 import 'package:smarttrash/utils/bubble_indication_painter.dart';
+import 'home.dart';
 
-class SignupPage extends StatefulWidget {
-  SignupPage({Key key}) : super(key: key);
+class LoginPage extends StatefulWidget {
+  LoginPage({Key key}) : super(key: key);
 
   @override
-  _SignupPageState createState() => new _SignupPageState();
+  _LoginPageState createState() => new _LoginPageState();
 }
 
-class _SignupPageState extends State<SignupPage>
+class _LoginPageState extends State<LoginPage>
     with SingleTickerProviderStateMixin {
 
   final GlobalKey<ScaffoldState> _scaffoldKey = new GlobalKey<ScaffoldState>();
@@ -333,8 +334,11 @@ class _SignupPageState extends State<SignupPage>
                       ),
                     ),
                     onPressed: () =>
-                        showInSnackBar("Login button pressed")),
+                        Navigator.push(context, MaterialPageRoute(
+                          builder: (context) => HomePage()
+                        )),
               ),
+              )
             ],
           ),
           Padding(
@@ -495,6 +499,35 @@ class _SignupPageState extends State<SignupPage>
                         padding: EdgeInsets.only(
                             top: 20.0, bottom: 20.0, left: 25.0, right: 25.0),
                         child: TextField(
+                          focusNode: myFocusNodeName,
+                          controller: signupNameController,
+                          keyboardType: TextInputType.text,
+                          textCapitalization: TextCapitalization.words,
+                          style: TextStyle(
+                              fontFamily: "WorkSansSemiBold",
+                              fontSize: 16.0,
+                              color: Colors.black),
+                          decoration: InputDecoration(
+                            border: InputBorder.none,
+                            icon: Icon(
+                              FontAwesomeIcons.users,
+                              color: Colors.black,
+                            ),
+                            hintText: "Status",
+                            hintStyle: TextStyle(
+                                fontFamily: "WorkSansSemiBold", fontSize: 16.0),
+                          ),
+                        ),
+                      ),
+                      Container(
+                        width: 250.0,
+                        height: 1.0,
+                        color: Colors.grey[400],
+                      ),
+                      Padding(
+                        padding: EdgeInsets.only(
+                            top: 20.0, bottom: 20.0, left: 25.0, right: 25.0),
+                        child: TextField(
                           focusNode: myFocusNodeEmail,
                           controller: signupEmailController,
                           keyboardType: TextInputType.emailAddress,
@@ -557,38 +590,7 @@ class _SignupPageState extends State<SignupPage>
                         height: 1.0,
                         color: Colors.grey[400],
                       ),
-                      Padding(
-                        padding: EdgeInsets.only(
-                            top: 20.0, bottom: 20.0, left: 25.0, right: 25.0),
-                        child: TextField(
-                          controller: signupConfirmPasswordController,
-                          obscureText: _obscureTextSignupConfirm,
-                          style: TextStyle(
-                              fontFamily: "WorkSansSemiBold",
-                              fontSize: 16.0,
-                              color: Colors.black),
-                          decoration: InputDecoration(
-                            border: InputBorder.none,
-                            icon: Icon(
-                              FontAwesomeIcons.lock,
-                              color: Colors.black,
-                            ),
-                            hintText: "Confirmation",
-                            hintStyle: TextStyle(
-                                fontFamily: "WorkSansSemiBold", fontSize: 16.0),
-                            suffixIcon: GestureDetector(
-                              onTap: _toggleSignupConfirm,
-                              child: Icon(
-                                _obscureTextSignupConfirm
-                                    ? FontAwesomeIcons.eye
-                                    : FontAwesomeIcons.eyeSlash,
-                                size: 15.0,
-                                color: Colors.black,
-                              ),
-                            ),
-                          ),
-                        ),
-                      ),
+                      
                     ],
                   ),
                 ),
@@ -635,7 +637,7 @@ class _SignupPageState extends State<SignupPage>
                       ),
                     ),
                     onPressed: () =>
-                        showInSnackBar("SignUp button pressed")),
+                        showInSnackBar("success")),
               ),
             ],
           ),
