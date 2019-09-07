@@ -10,6 +10,7 @@ dependencies:
     sdk: flutter
   flutter_launcher_icons: ^0.7.2
   cupertino_icons: ^0.1.2
+  charts_flutter: ^0.8.0
 
 dev_dependencies:
   flutter_test:
@@ -30,6 +31,7 @@ flutter:
   assets:
         - assets/login_logo.png
         - assets/LOGO12.png
+        - assets/charts1.png
   fonts:
     - family: WorkSansSemiBold
       fonts:

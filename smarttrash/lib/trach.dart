@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:smarttrash/style/theme.dart' as Theme;
 import 'login_page.dart';
 import 'home.dart';
-import 'trach.dart';
+import 'static.dart';
 
 class Trachpage extends StatefulWidget {
   @override
@@ -94,15 +94,17 @@ class MainContent extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: <Widget>[
                           new Icon(
-                            Icons.delete,
+                            Icons.delete_forever,
                             color: Colors.white,
                           ),
                           new Text("ขยะเต็ม",
                               style: new TextStyle(color: Colors.white))
                         ],
                       ),
+                      
                     ),
                   )),
+                  
                   new Expanded(
                       child: Padding(
                     padding: const EdgeInsets.only(right: 5.0),
@@ -136,7 +138,7 @@ class MainContent extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: <Widget>[
                           new Icon(
-                            Icons.delete,
+                            Icons.delete_outline,
                             color: Colors.white,
                           ),
                           new Text("ขยะน้อย",

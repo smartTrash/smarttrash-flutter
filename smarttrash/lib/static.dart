@@ -1,15 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:smarttrash/style/theme.dart' as Theme;
-import 'place.dart';
-import 'static.dart';
-import 'trach.dart';
+import 'static1.dart';
 
-class HomePage2 extends StatefulWidget {
+class StaticPage extends StatefulWidget {
   @override
-  _HomePageState createState() => new _HomePageState();
+  _StaticPageState createState() => new _StaticPageState();
 }
 
-class _HomePageState extends State<HomePage2> {
+class _StaticPageState extends State<StaticPage> {
   int _bottomNavIndex=0;
   @override
   Widget build(BuildContext context) {
@@ -74,8 +72,13 @@ class MainContent extends StatelessWidget {
               children: <Widget>[
                 Row(
                 children: <Widget>[
+                  new Container(
+                    child:Image.asset('assets/charts1.png',),
+                    padding:
+                                const EdgeInsets.only(top: 2.5, right: 20.5),
+                  ),
                   new Text(
-                    "หน้าหลัก",
+                    "สถิติ",
                     style: new TextStyle(
                       fontSize: 30.0,
                     ),
@@ -98,25 +101,25 @@ class MainContent extends StatelessWidget {
                             child: GestureDetector(
                               onTap: () {
                                 Navigator.push(context, MaterialPageRoute(
-                                  builder: (context) => Trachpage(),
+                                  builder: (context) => StaticPage1(),
                                 ));
                               },
                             child: new Container(
                               height: 60.0,
                               decoration: new BoxDecoration(
-                                  color: Color(0xFFFD7384),
-                                  borderRadius: new BorderRadius.circular(5.0)),
+                                  color: Color(0xFF00BFA5),
+                                  borderRadius: new BorderRadius.circular(100.0)),
                               child: new Row(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: <Widget>[
                                   Padding(
                                     padding: const EdgeInsets.only(right: 8.0),
                                     child: new Icon(
-                                      Icons.delete,
+                                      Icons.assessment,
                                       color: Colors.white,
                                     ),
                                   ),
-                                  new Text('ถังขยะ',
+                                  new Text('ปริมาณขยะของแต่ละที่',
                                       style: new TextStyle(color: Colors.white))
                                 ],
                               ),
@@ -138,19 +141,19 @@ class MainContent extends StatelessWidget {
                             child: new Container(
                               height: 60.0,
                               decoration: new BoxDecoration(
-                                  color: Color(0XFF2BD093),
-                                  borderRadius: new BorderRadius.circular(5.0)),
+                                  color: Color(0XFF1DE9B6),
+                                  borderRadius: new BorderRadius.circular(100.0)),
                               child: new Row(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: <Widget>[
                                   Padding(
                                     padding: const EdgeInsets.only(right: 8.0),
                                     child: new Icon(
-                                      Icons.beenhere,
+                                      Icons.assessment,
                                       color: Colors.white,
                                     ),
                                   ),
-                                  new Text('แจ้งเก็บขยะ',
+                                  new Text('จำนวนแจ้งเก็บขยะ',
                                       style: new TextStyle(color: Colors.white))
                                 ],
                               ),
@@ -168,102 +171,22 @@ class MainContent extends StatelessWidget {
                           child: Padding(
                             padding:
                                 const EdgeInsets.only(top: 2.5, right: 2.5),
-                            child: GestureDetector(
-                              onTap: () {
-                                Navigator.push(context, MaterialPageRoute(
-                                  builder: (context) => Placepage(),
-                                ));
-                              },
                             child: new Container(
                               height: 60.0,
                               decoration: new BoxDecoration(
-                                  color: Color(0XFF53CEDB),
-                                  borderRadius: new BorderRadius.circular(5.0)),
+                                  color: Color(0XFF64FFDA),
+                                  borderRadius: new BorderRadius.circular(100.0)),
                               child: new Row(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: <Widget>[
                                   Padding(
                                     padding: const EdgeInsets.only(right: 8.0),
                                     child: new Icon(
-                                      Icons.account_balance,
+                                      Icons.assessment,
                                       color: Colors.white,
                                     ),
                                   ),
-                                  new Text('สถานที่',
-                                      style: new TextStyle(color: Colors.white))
-                                ],
-                              ),
-                              ),
-                            ),
-                          ),
-                        ),
-                ],
-              ),
-              new SizedBox(
-                height: 10.0,
-              ),
-             Row(
-                children: <Widget>[
-                  Expanded(
-                          child: Padding(
-                            padding:
-                                const EdgeInsets.only(top: 2.5, right: 2.5),
-                            child: GestureDetector(
-                              onTap: () {
-                                Navigator.push(context, MaterialPageRoute(
-                                  builder: (context) => StaticPage(),
-                                ));
-                              },
-                            child: new Container(
-                              height: 60.0,
-                              decoration: new BoxDecoration(
-                                  color: Color(0xFFBA68C8),
-                                  borderRadius: new BorderRadius.circular(5.0)),
-                              child: new Row(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: <Widget>[
-                                  Padding(
-                                    padding: const EdgeInsets.only(right: 8.0),
-                                    child: new Icon(
-                                      Icons.equalizer,
-                                      color: Colors.white,
-                                    ),
-                                  ),
-                                  new Text('สถิติ',
-                                      style: new TextStyle(color: Colors.white))
-                                ],
-                              ),
-                            ),
-                            ),
-                          ),
-                        ),
-                ],
-              ),
-              new SizedBox(
-                height: 10.0,
-              ),
-              Row(
-                children: <Widget>[
-                  Expanded(
-                          child: Padding(
-                            padding:
-                                const EdgeInsets.only(top: 2.5, right: 2.5),
-                            child: new Container(
-                              height: 60.0,
-                              decoration: new BoxDecoration(
-                                  color: Color(0XFFF1B069),
-                                  borderRadius: new BorderRadius.circular(5.0)),
-                              child: new Row(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: <Widget>[
-                                  Padding(
-                                    padding: const EdgeInsets.only(right: 8.0),
-                                    child: new Icon(
-                                      Icons.art_track,
-                                      color: Colors.white,
-                                    ),
-                                  ),
-                                  new Text('ฟีดข่าว',
+                                  new Text('อะไรอีกอ่ะ ยังไม่คิด',
                                       style: new TextStyle(color: Colors.white))
                                 ],
                               ),
@@ -272,6 +195,7 @@ class MainContent extends StatelessWidget {
                         ),
                 ],
               ),
+              
               
             ],
           )),
