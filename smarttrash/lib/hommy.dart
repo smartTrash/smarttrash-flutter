@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:smarttrash/style/theme.dart' as Theme;
 import 'login_page.dart';
 import 'home.dart';
-import 'hommy.dart';
+import 'trach.dart';
 
 class HomePage2 extends StatefulWidget {
   @override
@@ -72,56 +72,7 @@ class MainContent extends StatelessWidget {
               new Stack(
               alignment: Alignment.center,
               children: <Widget>[
-                new Container(
-                  height: 60.0,
-                  width: 60.0,
-                  decoration: new BoxDecoration(
-                      borderRadius: new BorderRadius.circular(60.0),
-                      color: Color(0xFF18D191)),
-                  child: new Icon(
-                    Icons.home,
-                    color: Colors.white,
-                  ),
-                ),
-                new Container(
-                  margin: new EdgeInsets.only(right: 50.0, top: 50.0),
-                  height: 60.0,
-                  width: 60.0,
-                  decoration: new BoxDecoration(
-                      borderRadius: new BorderRadius.circular(50.0),
-                      color: Color(0xFFFC6A7F)),
-                  child: new Icon(
-                    Icons.delete,
-                    color: Colors.white,
-                  ),
-                ),
-                new Container(
-                  margin: new EdgeInsets.only(left: 30.0, top: 50.0),
-                  height: 60.0,
-                  width: 60.0,
-                  decoration: new BoxDecoration(
-                      borderRadius: new BorderRadius.circular(50.0),
-                      color: Color(0xFFFFCE56)),
-                  child: new Icon(
-                    Icons.local_car_wash,
-                    color: Colors.white,
-                  ),
-                ),
-                new Container(
-                  margin: new EdgeInsets.only(left: 90.0, top: 40.0),
-                  height: 60.0,
-                  width: 60.0,
-                  decoration: new BoxDecoration(
-                      borderRadius: new BorderRadius.circular(50.0),
-                      color: Color(0xFF45E0EC)),
-                  child: new Icon(
-                    Icons.place,
-                    color: Colors.white,
-                  ),
-                )
-              ],
-            ),
-              Row(
+                Row(
                 children: <Widget>[
                   new Text(
                     "หน้าหลัก",
@@ -132,6 +83,9 @@ class MainContent extends StatelessWidget {
                   ),
                 ],
               ),
+              ],
+            ),
+              
               new SizedBox(
                 height: 20.0,
               ),
@@ -141,6 +95,12 @@ class MainContent extends StatelessWidget {
                           child: Padding(
                             padding:
                                 const EdgeInsets.only(top: 2.5, right: 2.5),
+                            child: GestureDetector(
+                              onTap: () {
+                                Navigator.push(context, MaterialPageRoute(
+                                  builder: (context) => Trachpage(),
+                                ));
+                              },
                             child: new Container(
                               height: 60.0,
                               decoration: new BoxDecoration(
@@ -162,6 +122,7 @@ class MainContent extends StatelessWidget {
                               ),
                             ),
                           ),
+                        ),
                         ),
                 ],
               ),
@@ -201,7 +162,7 @@ class MainContent extends StatelessWidget {
               new SizedBox(
                 height: 10.0,
               ),
-             Row(
+              Row(
                 children: <Widget>[
                   Expanded(
                           child: Padding(
@@ -223,6 +184,39 @@ class MainContent extends StatelessWidget {
                                     ),
                                   ),
                                   new Text('สถานที่',
+                                      style: new TextStyle(color: Colors.white))
+                                ],
+                              ),
+                            ),
+                          ),
+                        ),
+                ],
+              ),
+              new SizedBox(
+                height: 10.0,
+              ),
+             Row(
+                children: <Widget>[
+                  Expanded(
+                          child: Padding(
+                            padding:
+                                const EdgeInsets.only(top: 2.5, right: 2.5),
+                            child: new Container(
+                              height: 60.0,
+                              decoration: new BoxDecoration(
+                                  color: Color(0xFFBA68C8),
+                                  borderRadius: new BorderRadius.circular(5.0)),
+                              child: new Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: <Widget>[
+                                  Padding(
+                                    padding: const EdgeInsets.only(right: 8.0),
+                                    child: new Icon(
+                                      Icons.equalizer,
+                                      color: Colors.white,
+                                    ),
+                                  ),
+                                  new Text('สถิติ',
                                       style: new TextStyle(color: Colors.white))
                                 ],
                               ),
@@ -264,6 +258,7 @@ class MainContent extends StatelessWidget {
                         ),
                 ],
               ),
+              
             ],
           )),
         )

@@ -8,7 +8,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  
+  flutter_launcher_icons: ^0.7.2
   cupertino_icons: ^0.1.2
 
 dev_dependencies:
@@ -17,12 +17,19 @@ dev_dependencies:
 
   font_awesome_flutter: ^8.0.1
 
+flutter_icons:
+  ios: true
+  android: true
+  image_path_ios: "assets/LOGO12.png"
+  image_path_android: "assets/LOGO12.png"
+
 flutter:
 
   uses-material-design: true
 
   assets:
         - assets/login_logo.png
+        - assets/LOGO12.png
   fonts:
     - family: WorkSansSemiBold
       fonts:
