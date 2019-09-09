@@ -1,15 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:smarttrash/style/theme.dart' as Theme;
-import 'place/sc.dart';
-import 'home.dart';
-import 'static.dart';
 
-class Placepage extends StatefulWidget {
+
+class Scpage extends StatefulWidget {
   @override
-  _PlacepageState createState() => new _PlacepageState();
+  _ScpageState createState() => new _ScpageState();
 }
 
-class _PlacepageState extends State<Placepage> {
+class _ScpageState extends State<Scpage> {
   int _bottomNavIndex=0;
   @override
   Widget build(BuildContext context) {
@@ -69,7 +67,7 @@ class MainContent extends StatelessWidget {
               Row(
                 children: <Widget>[
                   new Text(
-                    "สถานที่",
+                    "ตึกวิจัย",
                     style: new TextStyle(
                       fontSize: 30.0,
                     ),
@@ -85,12 +83,6 @@ class MainContent extends StatelessWidget {
                   new Expanded(
                       child: Padding(
                     padding: const EdgeInsets.only(right: 5.0),
-                    child: GestureDetector(
-                              onTap: () {
-                                Navigator.push(context, MaterialPageRoute(
-                                  builder: (context) => Scpage(),
-                                ));
-                              },
                     child: new Container(
                       height: 100.0,
                       decoration: new BoxDecoration(
@@ -110,16 +102,10 @@ class MainContent extends StatelessWidget {
                       
                     ),
                   )),
-                  ),
+                  
                   new Expanded(
                       child: Padding(
                     padding: const EdgeInsets.only(right: 5.0),
-                    child: GestureDetector(
-                              onTap: () {
-                                Navigator.push(context, MaterialPageRoute(
-                                  builder: (context) => Scpage(),
-                                ));
-                              },
                     child: new Container(
                       height: 100.0,
                       decoration: new BoxDecoration(
@@ -138,16 +124,9 @@ class MainContent extends StatelessWidget {
                       ),
                     ),
                   )),
-                  ),
                   new Expanded(
                       child: Padding(
                     padding: const EdgeInsets.only(right: 5.0),
-                    child: GestureDetector(
-                              onTap: () {
-                                Navigator.push(context, MaterialPageRoute(
-                                  builder: (context) => Scpage(),
-                                ));
-                              },
                     child: new Container(
                       height: 100.0,
                       decoration: new BoxDecoration(
@@ -166,10 +145,9 @@ class MainContent extends StatelessWidget {
                       ),
                     ),
                   )),
-                  ),
+                  
                 ],
               ),
-              
               new SizedBox(
                 height: 20.0,
               ),
@@ -178,12 +156,6 @@ class MainContent extends StatelessWidget {
                   new Expanded(
                       child: Padding(
                     padding: const EdgeInsets.only(right: 5.0),
-                    child: GestureDetector(
-                              onTap: () {
-                                Navigator.push(context, MaterialPageRoute(
-                                  builder: (context) => Scpage(),
-                                ));
-                              },
                     child: new Container(
                       height: 100.0,
                       decoration: new BoxDecoration(
@@ -203,16 +175,10 @@ class MainContent extends StatelessWidget {
                       
                     ),
                   )),
-                  ),
+                  
                   new Expanded(
                       child: Padding(
                     padding: const EdgeInsets.only(right: 5.0),
-                    child: GestureDetector(
-                              onTap: () {
-                                Navigator.push(context, MaterialPageRoute(
-                                  builder: (context) => Scpage(),
-                                ));
-                              },
                     child: new Container(
                       height: 100.0,
                       decoration: new BoxDecoration(
@@ -231,16 +197,9 @@ class MainContent extends StatelessWidget {
                       ),
                     ),
                   )),
-                  ),
                   new Expanded(
                       child: Padding(
                     padding: const EdgeInsets.only(right: 5.0),
-                    child: GestureDetector(
-                              onTap: () {
-                                Navigator.push(context, MaterialPageRoute(
-                                  builder: (context) => Scpage(),
-                                ));
-                              },
                     child: new Container(
                       height: 100.0,
                       decoration: new BoxDecoration(
@@ -259,7 +218,7 @@ class MainContent extends StatelessWidget {
                       ),
                     ),
                   )),
-                  ),
+                  
                 ],
               ),
               new SizedBox(
@@ -270,12 +229,6 @@ class MainContent extends StatelessWidget {
                   new Expanded(
                       child: Padding(
                     padding: const EdgeInsets.only(right: 5.0),
-                    child: GestureDetector(
-                              onTap: () {
-                                Navigator.push(context, MaterialPageRoute(
-                                  builder: (context) => Scpage(),
-                                ));
-                              },
                     child: new Container(
                       height: 100.0,
                       decoration: new BoxDecoration(
@@ -295,16 +248,10 @@ class MainContent extends StatelessWidget {
                       
                     ),
                   )),
-                  ),
+                  
                   new Expanded(
                       child: Padding(
                     padding: const EdgeInsets.only(right: 5.0),
-                    child: GestureDetector(
-                              onTap: () {
-                                Navigator.push(context, MaterialPageRoute(
-                                  builder: (context) => Scpage(),
-                                ));
-                              },
                     child: new Container(
                       height: 100.0,
                       decoration: new BoxDecoration(
@@ -323,16 +270,9 @@ class MainContent extends StatelessWidget {
                       ),
                     ),
                   )),
-                  ),
                   new Expanded(
                       child: Padding(
                     padding: const EdgeInsets.only(right: 5.0),
-                    child: GestureDetector(
-                              onTap: () {
-                                Navigator.push(context, MaterialPageRoute(
-                                  builder: (context) => Scpage(),
-                                ));
-                              },
                     child: new Container(
                       height: 100.0,
                       decoration: new BoxDecoration(
@@ -351,7 +291,6 @@ class MainContent extends StatelessWidget {
                       ),
                     ),
                   )),
-                  ),
                 ],
               ),
             ],
