@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:smarttrash/style/theme.dart' as Theme;
 
 
-class Scpage extends StatefulWidget {
+class Clb4page extends StatefulWidget {
   @override
-  _ScpageState createState() => new _ScpageState();
+  _Clb4pageState createState() => new _Clb4pageState();
 }
 
-class _ScpageState extends State<Scpage> {
+class _Clb4pageState extends State<Clb4page> {
   int _bottomNavIndex=0;
   @override
   Widget build(BuildContext context) {
@@ -67,7 +67,7 @@ class MainContent extends StatelessWidget {
               Row(
                 children: <Widget>[
                   new Text(
-                    "ตึกวิจัย",
+                    "CLB4",
                     style: new TextStyle(
                       fontSize: 30.0,
                     ),
@@ -87,7 +87,7 @@ class MainContent extends StatelessWidget {
                       height: 60.0,
                       decoration: new BoxDecoration(
                           borderRadius: new BorderRadius.circular(10.0),
-                          color: Colors.pink[300]),
+                          color: Colors.greenAccent),
                       child: new Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: <Widget>[
@@ -115,7 +115,7 @@ class MainContent extends StatelessWidget {
                       height: 60.0,
                       decoration: new BoxDecoration(
                           borderRadius: new BorderRadius.circular(10.0),
-                          color: Colors.pink[300]),
+                          color: Colors.greenAccent),
                       child: new Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: <Widget>[
@@ -143,7 +143,7 @@ class MainContent extends StatelessWidget {
                       height: 60.0,
                       decoration: new BoxDecoration(
                           borderRadius: new BorderRadius.circular(10.0),
-                          color: Colors.pink[300]),
+                          color: Colors.greenAccent),
                       child: new Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: <Widget>[
@@ -171,7 +171,7 @@ class MainContent extends StatelessWidget {
                       height: 60.0,
                       decoration: new BoxDecoration(
                           borderRadius: new BorderRadius.circular(10.0),
-                          color: Colors.pink[300]),
+                          color: Colors.greenAccent),
                       child: new Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: <Widget>[

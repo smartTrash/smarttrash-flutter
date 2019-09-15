@@ -1,8 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:smarttrash/style/theme.dart' as Theme;
 import 'place/sc.dart';
-import 'home.dart';
-import 'static.dart';
+import 'place/ct1.dart';
+import 'place/ct2.dart';
+import 'place/acb.dart';
+import 'place/clb2.dart';
+import 'place/clb3.dart';
+import 'place/clb4.dart';
+import 'place/clb5.dart';
+import 'place/lib.dart';
 
 class Placepage extends StatefulWidget {
   @override
@@ -117,7 +123,7 @@ class MainContent extends StatelessWidget {
                     child: GestureDetector(
                               onTap: () {
                                 Navigator.push(context, MaterialPageRoute(
-                                  builder: (context) => Scpage(),
+                                  builder: (context) => Ct2page(),
                                 ));
                               },
                     child: new Container(
@@ -145,7 +151,7 @@ class MainContent extends StatelessWidget {
                     child: GestureDetector(
                               onTap: () {
                                 Navigator.push(context, MaterialPageRoute(
-                                  builder: (context) => Scpage(),
+                                  builder: (context) => Libpage(),
                                 ));
                               },
                     child: new Container(
@@ -181,7 +187,7 @@ class MainContent extends StatelessWidget {
                     child: GestureDetector(
                               onTap: () {
                                 Navigator.push(context, MaterialPageRoute(
-                                  builder: (context) => Scpage(),
+                                  builder: (context) => Clb5page(),
                                 ));
                               },
                     child: new Container(
@@ -210,7 +216,7 @@ class MainContent extends StatelessWidget {
                     child: GestureDetector(
                               onTap: () {
                                 Navigator.push(context, MaterialPageRoute(
-                                  builder: (context) => Scpage(),
+                                  builder: (context) => Clb4page(),
                                 ));
                               },
                     child: new Container(
@@ -238,7 +244,7 @@ class MainContent extends StatelessWidget {
                     child: GestureDetector(
                               onTap: () {
                                 Navigator.push(context, MaterialPageRoute(
-                                  builder: (context) => Scpage(),
+                                  builder: (context) => Clb2page(),
                                 ));
                               },
                     child: new Container(
@@ -273,7 +279,7 @@ class MainContent extends StatelessWidget {
                     child: GestureDetector(
                               onTap: () {
                                 Navigator.push(context, MaterialPageRoute(
-                                  builder: (context) => Scpage(),
+                                  builder: (context) => Clb3page(),
                                 ));
                               },
                     child: new Container(
@@ -302,7 +308,7 @@ class MainContent extends StatelessWidget {
                     child: GestureDetector(
                               onTap: () {
                                 Navigator.push(context, MaterialPageRoute(
-                                  builder: (context) => Scpage(),
+                                  builder: (context) => Acbpage(),
                                 ));
                               },
                     child: new Container(
@@ -330,7 +336,7 @@ class MainContent extends StatelessWidget {
                     child: GestureDetector(
                               onTap: () {
                                 Navigator.push(context, MaterialPageRoute(
-                                  builder: (context) => Scpage(),
+                                  builder: (context) => Ct1page(),
                                 ));
                               },
                     child: new Container(

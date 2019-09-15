@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "731544440186",
+    "firebase_url": "https://seproject-a8ccd.firebaseio.com",
+    "project_id": "seproject-a8ccd",
+    "storage_bucket": "seproject-a8ccd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:731544440186:android:0c8f55684fa26b69141ac3",
+        "android_client_info": {
+          "package_name": "com.example.smarttrash"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "731544440186-9tg1uqed9q431geqdk918eb7i6r6n9tg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9koygGiFyPHpTAo1hK2gYzX2A2-d-DmY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "731544440186-9tg1uqed9q431geqdk918eb7i6r6n9tg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

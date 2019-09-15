@@ -11,6 +11,8 @@ dependencies:
   flutter_launcher_icons: ^0.7.2
   cupertino_icons: ^0.1.2
   charts_flutter: ^0.8.0
+  firebase_database: ^0.4.1
+  firebase_core: any
 
 dev_dependencies:
   flutter_test:

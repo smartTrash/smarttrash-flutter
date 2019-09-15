@@ -135,6 +135,12 @@ class MainContent extends StatelessWidget {
                           child: Padding(
                             padding:
                                 const EdgeInsets.only(top: 2.5, right: 2.5),
+                            child: GestureDetector(
+                              onTap: () {
+                                Navigator.push(context, MaterialPageRoute(
+                                  builder: (context) => Trachpage(),
+                                ));
+                              },
                             child: new Container(
                               height: 60.0,
                               decoration: new BoxDecoration(
@@ -154,6 +160,7 @@ class MainContent extends StatelessWidget {
                                       style: new TextStyle(color: Colors.white))
                                 ],
                               ),
+                            ),
                             ),
                           ),
                         ),

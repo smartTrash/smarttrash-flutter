@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:smarttrash/style/theme.dart' as Theme;
 
 
-class Scpage extends StatefulWidget {
+class Acbpage extends StatefulWidget {
   @override
-  _ScpageState createState() => new _ScpageState();
+  _AcbpageState createState() => new _AcbpageState();
 }
 
-class _ScpageState extends State<Scpage> {
+class _AcbpageState extends State<Acbpage> {
   int _bottomNavIndex=0;
   @override
   Widget build(BuildContext context) {
@@ -67,7 +67,7 @@ class MainContent extends StatelessWidget {
               Row(
                 children: <Widget>[
                   new Text(
-                    "ตึกวิจัย",
+                    "ACB",
                     style: new TextStyle(
                       fontSize: 30.0,
                     ),
@@ -87,7 +87,7 @@ class MainContent extends StatelessWidget {
                       height: 60.0,
                       decoration: new BoxDecoration(
                           borderRadius: new BorderRadius.circular(10.0),
-                          color: Colors.pink[300]),
+                          color: Colors.purpleAccent[100]),
                       child: new Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: <Widget>[
@@ -115,7 +115,7 @@ class MainContent extends StatelessWidget {
                       height: 60.0,
                       decoration: new BoxDecoration(
                           borderRadius: new BorderRadius.circular(10.0),
-                          color: Colors.pink[300]),
+                          color: Colors.purpleAccent[100]),
                       child: new Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: <Widget>[
@@ -131,62 +131,7 @@ class MainContent extends StatelessWidget {
                   )),
                 ],
               ),
-              new SizedBox(
-                height: 7.0,
-              ),
-              Row(
-                children: <Widget>[
-                  new Expanded(
-                      child: Padding(
-                    padding: const EdgeInsets.only(right: 5.0),
-                    child: new Container(
-                      height: 60.0,
-                      decoration: new BoxDecoration(
-                          borderRadius: new BorderRadius.circular(10.0),
-                          color: Colors.pink[300]),
-                      child: new Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: <Widget>[
-                          new Icon(
-                            Icons.delete,
-                            color: Colors.white,
-                          ),
-                          new Text("ชั้น 3",
-                              style: new TextStyle(color: Colors.white))
-                        ],
-                      ),
-                    ),
-                  )),
-                ],
-              ),
-              new SizedBox(
-                height: 7.0,
-              ),
-              Row(
-                children: <Widget>[
-                  new Expanded(
-                      child: Padding(
-                    padding: const EdgeInsets.only(right: 5.0),
-                    child: new Container(
-                      height: 60.0,
-                      decoration: new BoxDecoration(
-                          borderRadius: new BorderRadius.circular(10.0),
-                          color: Colors.pink[300]),
-                      child: new Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: <Widget>[
-                          new Icon(
-                            Icons.delete,
-                            color: Colors.white,
-                          ),
-                          new Text("ชั้น 4",
-                              style: new TextStyle(color: Colors.white))
-                        ],
-                      ),
-                    ),
-                  )),
-                ],
-              ),
+             
               
             ],
           )),
